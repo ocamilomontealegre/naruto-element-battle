@@ -83,6 +83,7 @@ p {
   height: 200px;
   margin-bottom: 1rem;
   border: 1px solid white;
+  border-radius: 25px;
   font-size: 8rem;
 }
 
@@ -107,6 +108,9 @@ p {
 .game-selection .selection {
   width: 180px;
   height: 180px;
+  border: 1px solid white;
+  border-radius: 25px;
+  background-color: var(--color-2);
 }
 
 .selection span {
