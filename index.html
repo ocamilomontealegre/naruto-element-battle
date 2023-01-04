@@ -33,7 +33,7 @@
         <!-- game-message -->
         <div class="game-message">
           <p>
-            Choose and element and protect<br>
+            Choose an element and protect<br>
             the ninja world
           </p>
         </div>
@@ -44,27 +44,45 @@
           <!-- player -->
           <div class="player">
             <div class="player-selection">
+              <span class="fa-sharp fa-solid fa-question"></span>
             </div>
-            <p class="player-score"></p>
+            <p class="player-score">Player: <span></span></p>
           </div>
           
-          <!-- round-counter -->
-          <div class="round-counter"></div>
+          <!-- game-counter -->
+          <div class="game-counter">
+            <div>
+              <span>Round</span><br>
+              <span>0</span>
+            </div>
+          </div>
 
           <!-- computer -->
           <div class="computer">
-            <div class="computer-selection"></div>
-            <p class="computer-score"></p>
+            <div class="computer-selection">
+              <span class="fa-sharp fa-solid fa-question"></span>
+            </div>
+            <p class="computer-score">Computer: <span></span></p>
           </div>
         </div>
 
         <!-- game-selection -->
         <div class="game-selection">
-          <button class="selection"></button>
-          <button class="selection"></button>
-          <button class="selection"></button>
-          <button class="selection"></button>
-          <button class="selection"></button>
+          <button class="selection">
+            <span class="fa-solid fa-fire element element-fire"></span>
+          </button>
+          <button class="selection">
+            <span class="fa-solid fa-wind element element-wind"></span>
+          </button>
+          <button class="selection">
+            <span class="fa-solid fa-bolt-lightning element element-lightning"></span>
+          </button>
+          <button class="selection">
+            <span class="fa-solid fa-mountain element element-earth"></span>
+          </button>
+          <button class="selection">
+            <span class="fa-solid fa-water element element-water"></span>
+          </button>
         </div>
 
       </div>
@@ -73,7 +91,7 @@
     <!-- footer -->
     <footer class="footer">
       <p>
-        Copyright <span id="year"></span> - @ocamilomontealege <span class="icon fa-brands fa-github"></span>
+        Copyright <span id="year"></span> - <a href="https://github.com/ocamilomontealegre" target="_blank">@ocamilomontealegre</a>
       </p>
     </footer>
   </div>

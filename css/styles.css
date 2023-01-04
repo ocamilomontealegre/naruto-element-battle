@@ -17,11 +17,20 @@ body {
   font-size: 16px;
 }
 
+p {
+  margin: 0;
+}
+
 /*** Variables ***/
 :root {
   --color-1: #F2A30B;
   --color-2: #0B0B0B;
   --color-3: #FFFFFF;
+  --color-4: #AA2635;
+  --color-5: #62B08B;
+  --color-6: #DEC94E;
+  --color-7: #C4695C;
+  --color-8: #7CACC9;
 }
 
 /*** Header ***/
@@ -29,14 +38,100 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 10rem;
+  padding: 1rem 10rem;maroon;
   background-color: var(--color-1);
 }
 
 .header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
+
+/*** Main ***/
+
+/*** Game ***/
+.game {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: var(--color-2);
+}
+
+/*** Game Message ***/
+.game-message {
+  padding: 3rem 10rem;
+  color: var(--color-3);
+}
+
+/*** Game Battle ***/
+.game-battle {
+  display: flex;
+  flex-direction: row wrap;
+  padding: 0 10rem 3rem;
+  color: var(--color-3);
+}
+
+.player-selection, .computer-selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1rem;
+  border: 1px solid white;
+  font-size: 8rem;
+}
+
+.player-score, .computer-score {
+  text-align: left;
+  text-indent: 1rem;
+}
+
+/*** Game Counter ***/
+.game-counter {
+  margin: 0 2rem;
+}
+
+/*** Game Selection ***/
+.game-selection {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+  padding: 0 10rem 3rem;
+}
+
+.game-selection .selection {
+  width: 180px;
+  height: 180px;
+}
+
+.selection span {
+  font-size: 8rem;
+}
+
+.selection .element-fire {
+  color: var(--color-4);
+}
+
+.selection .element-wind {
+  color: var(--color-5);
+}
+
+.selection .element-lightning {
+  color: var(--color-6);
+}
+
+.selection .element-earth {
+  color: var(--color-7);
+}
+
+.selection .element-water {
+  color: var(--color-8);
+}
 
 /*** Footer ***/
 .footer {
@@ -46,4 +141,9 @@ body {
   padding: 1rem 10rem;
   font-size: 1rem;
   background-color: var(--color-1);
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--color-2);
 }
