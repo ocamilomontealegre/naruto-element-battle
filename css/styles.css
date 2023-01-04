@@ -1,0 +1,9 @@
+/*** Styles ***/
+
+/*** Fonts ***/
+@import url("https://fonts.googleapis.com/css?family=Roboto|Sofia");
+
+/*** General Styles ***/
+* {
+  box-sizing: border-box;
+}
