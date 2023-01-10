@@ -1,101 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Basic Description Meta Tags -->
-  <meta name="description" content="Simple site, it's a little more advance version of the classic rock, paper, scissors game, but instead of the traditional objects, it use the five elements displayed in the 
-  Naruto manga and anime.">
-  <meta name="author" content="Juan Camilo Montealegre | @ocamilomontealegre">
-  <title>Naruto Element Battle</title>
-  <!-- Styles -->
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="icon" href="./favicon.png">
-  <!-- Icons -->
-  <script
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Basic Description Meta Tags -->
+    <meta
+      name="description"
+      content="Simple site, it's a little more advance version of the classic rock, paper, scissors game, but instead of the traditional objects, it use the five elements displayed in the 
+  Naruto manga and anime."
+    />
+    <meta
+      name="author"
+      content="Juan Camilo Montealegre | @ocamilomontealegre"
+    />
+    <title>Naruto Element Battle</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./favicon.png" />
+    <!-- Icons -->
+    <script
       src="https://kit.fontawesome.com/acc4ba919d.js"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
-  <div class="wrapper">
-    
-    <!-- header -->
-    <header class="header">
-      <h1>Naruto ELement Battle</h1>
-    </header>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header">
+        <h1>Naruto ELement Battle</h1>
+      </header>
 
-    <!-- main -->
-    <main>
-      <div class="game">
-        
-        <!-- game-message -->
-        <div class="game-message">
-          <p>
-            Choose an element and protect<br>
-            the ninja world
-          </p>
-        </div>
-
-        <!-- game-battle -->
-        <div class="game-battle">
-
-          <!-- player -->
-          <div class="player">
-            <div class="player-selection">
-              <span class="fa-sharp fa-solid fa-question"></span>
-            </div>
-            <p class="player-score">Player: <span></span></p>
-          </div>
-          
-          <!-- game-counter -->
-          <div class="game-counter">
-            <div>
-              <span>Round</span><br>
-              <span>0</span>
-            </div>
+      <!-- main -->
+      <main>
+        <div class="game">
+          <!-- game-message -->
+          <div class="game-message">
+            <p>
+              Choose an element and protect<br />
+              the ninja world
+            </p>
           </div>
 
-          <!-- computer -->
-          <div class="computer">
-            <div class="computer-selection">
-              <span class="fa-sharp fa-solid fa-question"></span>
+          <!-- game-battle -->
+          <div class="game-battle">
+            <!-- player -->
+            <div class="player">
+              <div class="player-selection" id="player-selection">
+                <span
+                  class="fa-sharp fa-solid fa-question"
+                  id="player-icon"
+                ></span
+                ><br />
+              </div>
+              <p>
+                Player: <span class="player-score" id="player-score">0</span>
+              </p>
             </div>
-            <p class="computer-score">Computer: <span></span></p>
+
+            <!-- game-counter -->
+            <div class="game-counter">
+              <div>
+                <span>Round</span><br />
+                <span id="round-counter">0</span>
+              </div>
+            </div>
+
+            <!-- computer -->
+            <div class="computer">
+              <div class="computer-selection">
+                <span
+                  class="fa-sharp fa-solid fa-question"
+                  id="computer-icon"
+                ></span>
+              </div>
+              <p>
+                Computer:
+                <span class="computer-score" id="computer-score">0</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- game-selection -->
+          <div class="game-selection">
+            <button class="selection" id="fire-button">
+              <span class="fa-solid fa-fire element element-fire"></span><br />
+            </button>
+            <button class="selection" id="wind-button">
+              <span class="fa-solid fa-wind element element-wind"></span>
+            </button>
+            <button class="selection" id="lightning-button">
+              <span
+                class="fa-solid fa-bolt-lightning element element-lightning"
+              ></span>
+            </button>
+            <button class="selection" id="earth-button">
+              <span class="fa-solid fa-mountain element element-earth"></span>
+            </button>
+            <button class="selection" id="water-button">
+              <span class="fa-solid fa-water element element-water"></span>
+            </button>
           </div>
         </div>
+      </main>
 
-        <!-- game-selection -->
-        <div class="game-selection">
-          <button class="selection">
-            <span class="fa-solid fa-fire element element-fire"></span>
-          </button>
-          <button class="selection">
-            <span class="fa-solid fa-wind element element-wind"></span>
-          </button>
-          <button class="selection">
-            <span class="fa-solid fa-bolt-lightning element element-lightning"></span>
-          </button>
-          <button class="selection">
-            <span class="fa-solid fa-mountain element element-earth"></span>
-          </button>
-          <button class="selection">
-            <span class="fa-solid fa-water element element-water"></span>
-          </button>
-        </div>
+      <!-- footer -->
+      <footer class="footer">
+        <p>
+          Copyright <span id="year"></span> -
+          <a href="https://github.com/ocamilomontealegre" target="_blank"
+            >@ocamilomontealegre</a
+          >
+        </p>
+      </footer>
+    </div>
 
-      </div>
-    </main>
-
-    <!-- footer -->
-    <footer class="footer">
-      <p>
-        Copyright <span id="year"></span> - <a href="https://github.com/ocamilomontealegre" target="_blank">@ocamilomontealegre</a>
-      </p>
-    </footer>
-  </div>
-
-  <script src="./js/scripts.js"></script>
-</body>
+    <script src="./js/scripts.js"></script>
+  </body>
 </html>

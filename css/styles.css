@@ -13,6 +13,7 @@
 } 
 
 body {
+  max-width: 100%;
   margin: 0;
   font-size: 16px;
 }
@@ -92,6 +93,11 @@ p {
   text-indent: 1rem;
 }
 
+.player-element {
+  display: block;
+  font-size: 1rem;
+}
+
 /*** Game Counter ***/
 .game-counter {
   margin: 0 2rem;
@@ -113,27 +119,29 @@ p {
   background-color: var(--color-2);
 }
 
-.selection span {
+.selection .element{
+  display: block;
+  width: 100%;
   font-size: 8rem;
 }
 
-.selection .element-fire {
+.element-fire {
   color: var(--color-4);
 }
 
-.selection .element-wind {
+.element-wind {
   color: var(--color-5);
 }
 
-.selection .element-lightning {
+.element-lightning {
   color: var(--color-6);
 }
 
-.selection .element-earth {
+.element-earth {
   color: var(--color-7);
 }
 
-.selection .element-water {
+.element-water {
   color: var(--color-8);
 }
 
