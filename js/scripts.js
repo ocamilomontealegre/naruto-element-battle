@@ -61,7 +61,7 @@ const counter = () => {
 
 // End Game
 const endGame = (playerHealth, computerHealth) => {
-  if (playerHealth === 5 || computerHealth === 5) {
+  if (playerHealth == 5 || computerHealth == 5) {
     buttons.forEach((element) => {
       element.setAttribute("disabled", "");
     })
@@ -70,12 +70,12 @@ const endGame = (playerHealth, computerHealth) => {
 
 // Game Battle
 const gameBattle = () => {
-  elements.forEach((element) => {
+  buttons.forEach((element) => {
     element.addEventListener("click", () => {
-      playerSelection.className = element.className;
+      playerSelection.className = element.firstElementChild.className;
       getComputerSelection();
-      counter();
       endGame(playerLives, computerLives);
+      counter();
       if (
         (playerSelection.className.includes("element-fire") &&
           computerSelection.className.includes("element-wind")) ||
